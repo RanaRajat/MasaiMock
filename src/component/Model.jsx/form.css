@@ -1,3 +1,34 @@
-.activeToggle{
-    display: none;
+.formm{
+    border: 1px solid black;
+    width: 40%;
+    height: 38vh;
+    background-color: aliceblue;
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+    margin-left: 29%;
+    margin-top: -40rem;
+    display: flex;
+    flex-direction: column;
+}
+.formm>form{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.formm>form>input{
+    height: 4rem;
+}
+.formm>form>*{
+    margin-top: 2%;
+}
+.formm>form>button{
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    width: 25%;
+    margin-left: 59%;
+    height: 3rem;
+
+
 }

@@ -1,14 +1,12 @@
-import React, { useState } from 'react'
-
+import React, { useState, useEffect } from 'react'
+import './form.css';
 const Form = () => {
+    const [arr, setArr] = useState([]);
 
     const [dvalue ,setDvalue] = useState({
         title:"",
         description:""
     })
-
-    const [arr, setArr] = useState([]);
-
 
     const change = (e)=>{
         e.preventDefault();
@@ -19,14 +17,15 @@ const Form = () => {
 
         console.log(dvalue);
          setArr([...arr, dvalue]);
-
     
     }
-
+    useEffect(()=>{
+        localStorage.setItem('array', JSON.stringify(arr));
+    },[arr])
 
   return (
  
-    <>
+    <div className='formm'>
     <form action="" onSubmit={onSubmit}>
         <label htmlFor=""
         
@@ -48,7 +47,7 @@ const Form = () => {
         />  
         <button type='submit'>Add Note</button>      
     </form>
-    </>
+    </div>
   )
 }
 

@@ -1,0 +1,20 @@
+#buttonId{
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    margin-top: -10rem;
+    margin-left: 80%;
+    background-color: rgb(22, 22, 22,0.2);
+    color: white;
+    border-radius: 10%;
+    position: sticky;
+}
+#buttonId:hover{
+    background-color: rgb(22, 22, 22);
+
+}
+.inactive{
+    display: none;
+}

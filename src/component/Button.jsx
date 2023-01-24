@@ -1,13 +1,23 @@
 import React, { useState } from 'react'
-
-const Button = () => {
+import './Button.css';
+import Form from './Model.jsx/Form';
+const Buttons = () => {
     const [active, setActive] = useState("inactive");
-
+    const handleClick = ()=>{
+        console.log(active);
+        if(active === 'active'){
+            setActive("inactive");
+        }
+        else{
+        setActive("active");
+        }
+    }
   return (
-    <>
-    <button className={active} type='submit'>Button</button>
-    </>
+<>
+<div className={active}><Form/></div>
+    <button id='buttonId'  onClick={()=>handleClick()} type='submit'>Button</button>
+ </> 
   )
 }
 
-export default Button;
+export default Buttons;

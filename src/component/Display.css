@@ -1,0 +1,16 @@
+.display{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+.innerDiv{
+    border: 1px solid black;
+    width: 20%;
+    height: 15rem;
+    margin: 2%;
+}
